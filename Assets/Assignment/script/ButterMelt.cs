@@ -21,7 +21,7 @@ public class ButterMelt : MonoBehaviour
     //check is the steak enters the area of the butter
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        butterRenderer.color = new Color(butterRenderer.color.r, butterRenderer.color.g, butterRenderer.color.g, 0.0f);
+        butterRenderer.color = new Color(butterRenderer.color.r, butterRenderer.color.g, butterRenderer.color.g, 0.7f);
     }
 
     //check if the steak leaves the area of the butter
