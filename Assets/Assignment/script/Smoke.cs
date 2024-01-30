@@ -35,7 +35,7 @@ public class Smoke : MonoBehaviour
             }
             else
             {
-                smokeRenderer.color = new Color(smokeRenderer.color.r, smokeRenderer.color.g, smokeRenderer.color.b, 0.0f);
+                smokeRenderer.color = new Color(smokeRenderer.color.r, smokeRenderer.color.g, smokeRenderer.color.b, 1.0f);
             }
         }
     }
