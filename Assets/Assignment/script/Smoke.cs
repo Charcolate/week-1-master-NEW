@@ -29,13 +29,14 @@ public class Smoke : MonoBehaviour
             //reset the timer
             opacityChangeTimer = 0f; 
 
+            //change the opacity of the smoke between 50% of opacity and 0% of opacity
             if (smokeRenderer.color.a ==1.0f)
             {
                 smokeRenderer.color = new Color(smokeRenderer.color.r, smokeRenderer.color.g, smokeRenderer.color.b, 0.5f);
             }
             else
             {
-                smokeRenderer.color = new Color(smokeRenderer.color.r, smokeRenderer.color.g, smokeRenderer.color.b, 0.0f);
+                smokeRenderer.color = new Color(smokeRenderer.color.r, smokeRenderer.color.g, smokeRenderer.color.b, 1.0f);
             }
         }
     }
