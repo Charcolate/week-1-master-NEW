@@ -6,10 +6,8 @@ public class SteakMove : MonoBehaviour
 {
     //give the steak basic states for moving around
     Vector2 direction;
-    public float maxSpeed = 500;
     Rigidbody2D rb;
     public float forwardSpeed = 500;
-    public float steeringSpeed = 100;
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +20,8 @@ public class SteakMove : MonoBehaviour
     {
         direction.x = Input.GetAxis("Horizontal");
         direction.y = Input.GetAxis("Vertical");
+        Vector2 movement = new Vector2 (direction.x, direction.y);
+        transform.Translate (movement*Time.deltaTime);
     }
 
     private void FixedUpdate()
